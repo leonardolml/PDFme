@@ -1,0 +1,96 @@
+<!doctype html>
+<!--
+---- Criado por leonardolml
+---- Contato em https://github.com/leonardolml
+-->
+<html lang="pt-br">
+
+<head>
+    <title>PDFme</title>
+    <meta charset="utf-8">
+
+    <!-- Bootstrap 4 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
+    <!-- Bootstrap 4 -->
+
+    <!-- Datepicker -->
+    <!-- https://github.com/fengyuanchen/datepicker -->
+    <link rel="stylesheet" href="dist/datepicker.css">
+    <!-- Datepicker -->
+
+</head>
+
+<body>
+    <!-- header -->
+    <!-- salvar cor azul: style="background-color: #243d7c;" -->
+    <nav class="navbar sticky-top navbar-dark bg-info">
+        <a class="navbar-brand" href="#">PDFme</a>
+        <!-- tecnologias usadas-->
+        <span class="navbar-text">Bootstrap + FDPF + Datepicker</span>
+
+    </nav>
+
+    <!-- fim header -->
+
+    <!-- conteudo -->
+    <div class="container">
+        <div class="row">
+            <div class="col"></div>
+            <div class="col-6">
+                <br>
+                <br>
+                <div class="jumbotron">
+                    <form method='POST' action="PDFme.php">
+                        <div class="form-group">
+                            <label for="nome">Nome</label>
+                            <input type="text" name="nome" class="form-control">
+                            <br>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" name="email" class="form-control">
+                            <br>
+                        </div>
+                        <div class="form-group">
+                            <label for="telefone">Telefone</label>
+                            <input type="text" name="telefone" class="form-control">
+                            <br>
+                        </div>
+                        <div class="form-group">
+                            <label for="date">Data</label>
+                            <input type="text" class="form-control" data-toggle="datepicker" name="date">
+                        </div>
+                        <br>
+                        <button type="submit" class="btn btn-info btn-block">PDF!</button>
+                    </form>
+                </div>
+            </div>
+            <div class="col"></div>
+        </div>
+    </div>
+    <!-- fim conteudo -->
+
+    <!-- Datepicker -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
+    <script src="dist/datepicker.js"></script>
+    <script src="dist/datepicker.pt-BR.js"></script>
+    <script>
+        $(function() {
+            $('[data-toggle="datepicker"]').datepicker({
+                autoHide: true,
+                language: 'pt-BR'
+            });
+        });
+
+    </script>
+    <!-- Datepicker -->
+
+
+
+</body>
+
+
+
+</html>
