@@ -1,5 +1,5 @@
 # PDFme
-**Um formulário simples que gera um PDF de seu conteúdo - Meu primeiro projeto no github**
+**Um formulário simples que gera um PDF de seu conteúdo**
 
 Esse projeto utiliza:
 
